@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #243342;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Amatic SC', cursive;
+}
+
+.little-circle {
+  position: absolute;
+  border-radius: 50%;
+  animation-name: littleCircle;
+  animation-duration: 0.5s;
+}
+
+@keyframes littleCircle {
+  from {
+    width: 10vw;
+    height: 10vw;
+  }
+  to {
+    width: 0;
+    height: 0;
+  }
+}
+
+body > div{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+.main .first{
+    color: #f1c40f;
+}
+
+.main .second{
+    color: #27ae60;
+}
+
+.main p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main button{
+    display: inline-block;
+}
+
+.btn{
+    width: 5rem;
+    height: 2rem;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 0px ;
+}
+
+.btn:hover, .active{
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn{
+    cursor: pointer;
+}
