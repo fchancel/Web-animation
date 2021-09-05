@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+}
+
+.container > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 5rem;
+  color: white;
+}
+
+.text {
+  display: inline-block;
+  transform: rotate(2deg);
+}
+
+.text1 {
+  display: inline-block;
+  transform: rotate(-30deg);
+}
+
+.text2 {
+  display: inline-block;
+  transform: rotate(30deg);
+}
+
+.cube {
+  animation: rotateCube 8s, opacityCube 8s;
+}
+
+@keyframes rotateCube {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 3vw;
+    height: 3vw;
+    transform: translateY(-450px) rotate(360deg);
+  }
+}
+
+@keyframes opacityCube {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -17,24 +17,6 @@ body {
   font-family: "Amatic SC", cursive;
 }
 
-.bubble {
-  position: absolute;
-  border-radius: 50%;
-  animation-name: bubbleSwing;
-  animation-duration: 0.5s;
-}
-
-@keyframes bubbleSwing {
-  from {
-    width: 10vw;
-    height: 10vw;
-  }
-  to {
-    width: 0;
-    height: 0;
-  }
-}
-
 body > div {
   display: flex;
   justify-content: center;
@@ -86,4 +68,22 @@ body > div {
 .active {
   background-color: #27ae60;
   color: white;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  animation-name: bubbleSwing;
+  animation-duration: 0.5s;
+}
+
+@keyframes bubbleSwing {
+  from {
+    width: 10vw;
+    height: 10vw;
+  }
+  to {
+    width: 0;
+    height: 0;
+  }
 }
